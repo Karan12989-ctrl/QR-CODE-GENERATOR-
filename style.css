@@ -1,0 +1,31 @@
+/* General Page Setup */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f8faff, #e3f2fd);
+  margin: 0;
+  padding-top: 70px; /* space for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1a73e8, #4a90e2);
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.nav-logo {
+  text-align: left;
+  letter-spacing: 1px;
+}
