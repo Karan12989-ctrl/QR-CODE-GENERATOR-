@@ -24,7 +24,7 @@ document.getElementById("generateBtn").addEventListener("click", () => {
   } else if (activeTab === "wifi") {
     const name = document.getElementById("wifiName").value;
     const pass = document.getElementById("wifiPassword").value;
-    data = WIFI:T:WPA;S:${name};P:${pass};;;
+    data = `WIFI:T:WPA;S:${name};P:${pass};;`;
   }
 
   if (data.trim() === "") {
