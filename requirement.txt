@@ -1,0 +1,90 @@
+Project Requirements: QR Code Generator Web App
+Hi team,
+I'm the client for this project, and I want you to build a simple, user-friendly QR code generator web application based on the screenshots provided in the attached Photo.pdf file. The app should allow users to quickly create QR codes for different types of content: URLs, plain text, or Wi-Fi credentials. It needs to be responsive, clean, and easy to use, similar to what's shown in the examples.
+Here's a detailed breakdown of the features and specifications:
+1. Overall Layout and Design
+
+Header: Display a title like "QR Code Generator" at the top in a blue background (e.g., #007BFF for the header bar).
+Main Section: Centered content with a subtitle such as "Create Your QR Code Instantly".
+Color Scheme: Use a light background (e.g., #F0F8FF) for the body. Buttons and tabs should have contrasting colors: blue for URL and Wi-Fi tabs, orange for Text tab (as seen in the screenshots).
+Responsiveness: Ensure it works well on desktop and mobile. Use CSS frameworks like Bootstrap if needed for quick implementation.
+QR Display Area: Below the input form, show the generated QR code in a square box. If no QR is generated yet, display a placeholder or empty space.
+
+2. Tab Navigation
+
+Provide three tabs/buttons for content types:
+
+URL (default selected, blue button).
+Text (orange button).
+Wi-Fi (blue button).
+
+
+These should be toggleable radio buttons or tabs. When a tab is selected, update the input form below accordingly.
+Use icons if possible (e.g., a link icon for URL, text icon for Text, Wi-Fi signal icon for Wi-Fi) to make it more intuitive.
+
+3. Input Forms (Dynamic Based on Tab)
+
+URL Tab:
+
+Single text input field labeled "URL" with a placeholder like "https://example.com".
+
+
+Text Tab:
+
+Single textarea or input field labeled "Text" with a placeholder like "Enter your text here".
+
+
+Wi-Fi Tab:
+
+Two input fields:
+
+SSID (text input, labeled "SSID" with placeholder like "Network Name").
+Password (password input type to mask characters, labeled "Password" with placeholder like "Network Password").
+
+
+
+
+All inputs should have basic validation: e.g., URL should start with http/https, Wi-Fi fields shouldn't be empty.
+
+4. Actions/Buttons
+
+Two buttons below the inputs:
+
+Generate QR: Primary button (blue) that creates the QR code based on the input and selected tab.
+Download QR: Secondary button (perhaps gray or blue outline) that downloads the generated QR as a PNG image. Disable this until a QR is generated.
+
+
+On generate, display the QR code immediately below the buttons.
+
+5. QR Code Generation Logic
+
+Use a JavaScript library like QRCode.js (or similar) to generate the QR codes client-side for speed and privacy.
+For URL: Encode the input URL directly.
+For Text: Encode the plain text input.
+For Wi-Fi: Use the standard Wi-Fi QR format: WIFI:S:<SSID>;T:WPA;P:<PASSWORD>;; (assume WPA by default, but you can add a dropdown for encryption type if time allows).
+Error Handling: If input is invalid (e.g., empty fields), show a friendly alert like "Please fill in the required fields."
+
+6. Technical Requirements
+
+Frontend: HTML, CSS, JavaScript. No backend needed since it's all client-side.
+Libraries:
+
+QR code generation: QRCode.js or qrcode-generator.
+No heavy frameworks unless necessary; keep it lightweight.
+
+
+Browser Compatibility: Test on Chrome, Firefox, Safari, and Edge.
+Accessibility: Add alt text to the QR image (e.g., "Generated QR Code for [type]"), ensure keyboard navigation for tabs and buttons.
+
+7. Additional Features (Nice-to-Haves)
+
+Option to customize QR code (e.g., size, color), but only if it doesn't delay the core functionality.
+Auto-generate on input change after initial generate, for a smoother UX.
+Share button to copy the QR image URL or download as SVG.
+
+8. Deliverables and Timeline
+
+Provide a working prototype as a static HTML file or hosted on GitHub Pages.
+Include source code in a Git repo.
+Timeline: Aim for a first draft in 3-5 days, with revisions based on my feedback.
+Budget: Let's discuss based on your estimate, but keep it simple.
