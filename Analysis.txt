@@ -2,3 +2,5 @@ I am the Project Manage and I will present the project log for all step by step:
 1.Client provided the Requirement for the website.
 2.UI/UX work is given to team.
 3.UI/UX work is done.
+4.The front end work done and the correction is applied.
+5.The Backend work need correction.
