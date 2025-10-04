@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-logo">QR Code Generator</div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Create Your QR Code Instantly</h1>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="url">🌐 URL</button>
+      <button class="tab-btn" data-tab="text">✍️ Text</button>
+      <button class="tab-btn" data-tab="wifi">📶 Wi-Fi</button>
+    </nav>
+
+    <!-- Input Areas -->
+    <div class="tab-content active" id="url">
+      <input type="text" id="urlInput" placeholder="Enter website URL...">
+    </div>
+
+    <div class="tab-content" id="text">
+      <textarea id="textInput" placeholder="Enter your text..."></textarea>
+    </div>
+
+    <div class="tab-content" id="wifi">
+      <input type="text" id="wifiName" placeholder="Wi-Fi Name (SSID)">
+      <input type="password" id="wifiPassword" placeholder="Password">
+    </div>
+
+    <!-- QR Code Display -->
+    <div class="qr-section">
+      <div id="qrcode"></div>
+      <button id="generateBtn">Generate QR</button>
+      <button id="downloadBtn">Download QR</button>
+    </div>
+  </div>
+
+  <!-- ✅ Working QRCodeJS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
