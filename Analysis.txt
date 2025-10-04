@@ -4,3 +4,5 @@ I am the Project Manage and I will present the project log for all step by step:
 3.UI/UX work is done.
 4.The front end work done and the correction is applied.
 5.The Backend work need correction.
+6.The Backend code is working properly and the executed.
+7.The Development Version No. 1 is completed.
