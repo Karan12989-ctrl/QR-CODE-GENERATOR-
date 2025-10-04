@@ -29,3 +29,121 @@ body {
   text-align: left;
   letter-spacing: 1px;
 }
+
+/* Main Container */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  max-width: 430px;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* Header */
+header h1 {
+  margin: 0 0 18px;
+  color: #1a73e8;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  background: #e3eaf5;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #c9daf8;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #1a73e8, #4a90e2);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(26, 115, 232, 0.4);
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Inputs & Textareas */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 6px rgba(26, 115, 232, 0.3);
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* QR Section */
+.qr-section {
+  text-align: center;
+}
+
+#qrcode {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Buttons */
+#generateBtn, #downloadBtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1a73e8, #4a90e2);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+#generateBtn:hover, #downloadBtn:hover {
+  background: linear-gradient(135deg, #0d5ac1, #357ae8);
+  box-shadow: 0 4px 10px rgba(26, 115, 232, 0.4);
+}
