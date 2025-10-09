@@ -8,3 +8,5 @@ I am the Project Manage and I will present the project log for all step by step:
 7.The Development Version No. 1 is completed.
 8.The client want to change the color of the "Generate QR" And "Download QR" button in Red and Blue .
 9.The work forward to the Front End Developer and Tester.
+10.The testing and front end work is done.
+11.The Lastest version is Development Version No.2 is completed.
