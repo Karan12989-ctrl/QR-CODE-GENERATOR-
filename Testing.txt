@@ -4,3 +4,4 @@
 4.The Development version 1 is executed.
 5.THe Generate QR button Should be Red,So Front End Developer Change the Color.
 6.There is the update now change the both the button Color to Red and Blue.
+7.The client request is completed.
