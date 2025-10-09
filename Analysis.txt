@@ -6,3 +6,5 @@ I am the Project Manage and I will present the project log for all step by step:
 5.The Backend work need correction.
 6.The Backend code is working properly and the executed.
 7.The Development Version No. 1 is completed.
+8.The client want to change the color of the "Generate QR" button to Red.
+9.The work forward to the Front End Developer.
